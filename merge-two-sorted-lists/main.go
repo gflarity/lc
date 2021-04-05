@@ -62,7 +62,7 @@ func mergeTwoLists(a *ListNode, b *ListNode) *ListNode {
 		cur = cur.Next
 	}
 	return head
-}
+
 
 func printWalk(n *ListNode) {
 	for n != nil {
