@@ -1,3 +1,5 @@
+package main
+
 /*  1. Paraphrase
         Given a string s, return the index of the first non-repeating character in it. Return -1 if all characters repeat at least once.
 
@@ -20,6 +22,8 @@
     return -1 if there weren't any
 
 */
+
+
 func firstUniqChar(s string) int {
 	// len 0 string has no characters that occur exactly once
 	if len(s) == 0 {
