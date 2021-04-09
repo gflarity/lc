@@ -49,6 +49,4 @@ func parseInt(b byte) int {
 	return int(i)
 }
 
-func main() {
-	fmt.Println(addStrings("11", "123"))
-}
+
