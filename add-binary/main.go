@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func addBinary(a string, b string) string {
 	if len(a) == 0 {
 		return b
@@ -72,13 +70,4 @@ func addBinary(a string, b string) string {
 	return result
 }
 
-func main() {
-	//fmt.Println(addBinary("01", "1"))
-	fmt.Println(addBinary("01", "11"))
-	fmt.Println(addBinary("01", "11"))
-	fmt.Println(addBinary("", "11"))
 
-	// 1000000000000000000000000000000000000000000000000000000000000000000
-	fmt.Println(addBinary("100000000000000000000000000000000000000000000000000000000000000000", "100000000000000000000000000000000000000000000000000000000000000000"))
-
-}
