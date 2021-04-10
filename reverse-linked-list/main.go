@@ -40,17 +40,3 @@ func copy(node *ListNode) *ListNode {
 	}
 }
 
-func printWalk(node *ListNode) {
-	fmt.Printf("%d->", node.Val)
-	for node.Next != nil {
-		node = node.Next
-		fmt.Printf("%d->", node.Val)
-	}
-	fmt.Print("\n")
-}
-
-func main() {
-	list := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3}}}
-	r := reverseList(list)
-	printWalk(r)
-}
