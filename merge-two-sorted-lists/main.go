@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -62,29 +60,5 @@ func mergeTwoLists(a *ListNode, b *ListNode) *ListNode {
 		cur = cur.Next
 	}
 	return head
-
-
-func printWalk(n *ListNode) {
-	for n != nil {
-		fmt.Printf("%d->", n.Val)
-		n = n.Next
-	}
-	fmt.Print("\n")
 }
 
-func main() {
-	a1 := &ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 5}}}
-	b1 := &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: &ListNode{Val: 6}}}
-	printWalk(mergeTwoLists(a1, b1))
-
-	// edge case one lis tis nill
-	a2 := &ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 5}}}
-	var b2 *ListNode
-	printWalk(mergeTwoLists(a2, b2))
-
-	// edge case different lengths
-	a3 := &ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 5}}}
-	b3 := &ListNode{Val: 2}
-	printWalk(mergeTwoLists(a3, b3))
-
-}

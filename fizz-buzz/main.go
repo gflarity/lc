@@ -40,15 +40,4 @@ func fizzBuzz(n int) []string {
 	return results
 }
 
-func main() {
-	// initial/obvious test cases
-	fmt.Println(fizzBuzz(0))
-	fmt.Println(fizzBuzz(1))
-	fmt.Println(fizzBuzz(-1))
-	fmt.Println(fizzBuzz(3))
-	fmt.Println(fizzBuzz(5))
-	fmt.Println(fizzBuzz(15))
 
-	// 3. test case second pass
-	// 4. implementation
-}
